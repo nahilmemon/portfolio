@@ -1,0 +1,45 @@
+<nav class="w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur border-b dark:border-gray-800 fixed top-0 left-0 z-50">
+  <div class="max-w-6xl mx-auto flex items-center justify-between py-3 px-4 sm:px-6">
+
+    <!-- LEFT: Logo -->
+    <a href="/index.html" class="font-semibold text-lg text-gray-900 dark:text-gray-100">
+      Nahil Ali Memon
+    </a>
+
+    <!-- RIGHT (mobile) -->
+    <div class="flex items-center space-x-4 sm:hidden">
+      <!-- Theme toggle -->
+      <button class="theme-toggle text-2xl text-gray-800 dark:text-gray-200" aria-label="Toggle theme" tabindex="0">
+        🌙
+      </button>
+
+      <!-- Hamburger -->
+      <button id="menuToggle" aria-label="Menu" tabindex="0"
+              class="relative w-8 h-8 flex flex-col items-center justify-around group">
+        <span class="hamburger-line top-1"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line bottom-1"></span>
+      </button>
+    </div>
+
+    <!-- DESKTOP NAV -->
+    <div class="hidden sm:flex items-center space-x-6 text-sm">
+      <a href="/about.html" class="nav-link">About</a>
+      <a href="/projects.html" class="nav-link">Projects</a>
+      <a href="/teaching.html" class="nav-link">Teaching</a>
+      <a href="/cv.html" class="nav-link">CV</a>
+
+      <button class="theme-toggle text-xl ml-2 hover:opacity-80" aria-label="Toggle theme" tabindex="0">
+        🌙
+      </button>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="sm:hidden hidden flex flex-col bg-white dark:bg-gray-900 border-t dark:border-gray-800 px-4 py-3 space-y-3">
+    <a href="/about.html" class="nav-link">About</a>
+    <a href="/projects.html" class="nav-link">Projects</a>
+    <a href="/teaching.html" class="nav-link">Teaching</a>
+    <a href="/cv.html" class="nav-link">CV</a>
+  </div>
+</nav>
